@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Krub;
+	font-size: 1.1em;
+	padding-top: 100px;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+
+h2::first-letter{
+	font-size: 1.5em;
+	color: #015500;
+}
+header{
+	position: relative;
+}
+
+#topHeader{
+	min-width: 100%;
+	height: 70px;
+	position: fixed;
+	position: --webkit-fixed;
+	top: 0;
+	left: 0;
+	background:#333333;
+	color: #EEEEEE;
+	padding: 20px 30px;
+}
+#navWrapper{
+	position: relative;
+}
+#nav{
+	width: 400px;
+	min-height: 100%;
+	background: #334433;
+	position: fixed;
+	z-index: 1;
+}
+
+#nav a{
+	display: block;
+	color: #FFFFFF;
+	line-height: 2em;
+	border-bottom: 1px solid #cccccc;
+	padding: 5px 0 2px 0;
+}
+
+#nav a:hover{
+	background: #FAA500;
+	color: #333333;
+	font-weight: bolder;
+}
+
+#navButton{
+	color: #339999;
+	cursor: pointer;
+}
+
+#closeMenu{
+	cursor: pointer;
+}
+
+#closeMenu{
+	text-align: right;
+	padding: 50px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*logo*/
+#divLogo{
+	padding: 15px;
+	text-align: center;
+}
+#logo{
+	width: 100px;
+	height: auto;
+}
+
+section{
+	padding-top: 5em;
+}
+
+/*goUp*/
+#goUp{
+	position: sticky;
+	left: 90%;
+	top: 90%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: rgba(200, 30, 30, 0.7);
+	color: white;
+	text-align: center;
+	line-height:90px;
+	z-index: 0;
+}
+
+#goUp i{
+	position: relative;
+	font-size: 50px;
+	color: #FFFFFF;
+	z-index: 2 !important;
+}
+/* Footer */
+footer{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	min-width: 100%;
+	height: 5em;
+	background:#333333;
+	color: #EEEEEE;
+	padding: 20px 30px;
+
+	text-align: center;
+	font-weight: bold;
+}
+/* /Footer*/
+.container ul {
+ background: rgba(90, 90, 100, 0.7 );
+}
+
+ul li{
+	list-style: none;
+	display: block;
+	min-width: 100%;
+	margin-bottom: 25px;
+}
+
+.container {
+	padding: 25px;
+}
+
+#wrapper{
+	padding-top: 6em;
+}
+
+li :nth-child(1)::before{
+	content:'\003c';
+}
+
+li :nth-child(1)::after{
+	content:'\003e';
+}
